@@ -24,19 +24,19 @@ export default function Footer()
                 <div className={styles.socialLinks}>
                     <h2 className={styles.footerTitle}>Social Links</h2>
                     <a href={"https://www.linkedin.com/in/jaivant-rajasekaran-b6b6a7220"}>
-                         <Image style={{filter: "brightness(100%) invert(100%)"}} title={"LinkedIn"} src="/icons/linkedin.png" alt="LinkedIn" width="25" height="50"/>
+                         <Image style={{filter: "brightness(100%) invert(100%)"}} title={"LinkedIn"} src="./icons/linkedin.png" alt="LinkedIn" width="25" height="50"/>
                     </a>
                     <a href={"mailto:rajajai2003@gmail.com"}>
-                         <Image style={{filter: "brightness(100%) invert(100%)"}} title={"Gmail"} src="/icons/gmail-logo.png" alt="Gmail" width="25" height="50"/>
+                         <Image style={{filter: "brightness(100%) invert(100%)"}} title={"Gmail"} src="./icons/gmail-logo.png" alt="Gmail" width="25" height="50"/>
                     </a>
                     <a href={"https://medium.com/@rajajai2003"}>
-                        <Image style={{filter: "brightness(100%) invert(100%)"}}  title={"Medium"} src="/icons/medium.png" alt="stack" width="25" height="50"/>
+                        <Image style={{filter: "brightness(100%) invert(100%)"}}  title={"Medium"} src="./icons/medium.png" alt="stack" width="25" height="50"/>
                     </a>
                     <a href="https://stackoverflow.com/users/22091209/jaivant-rajasekaran" target="_blank">
-                        <Image style={{filter: "brightness(100%) invert(100%)"}} className={styles.linkImg}  title={"StackOverflow"} src="/icons/stack-overflow.png" alt="Stackoverflow" width="25" height="50"/>
+                        <Image style={{filter: "brightness(100%) invert(100%)"}} className={styles.linkImg}  title={"StackOverflow"} src="./icons/stack-overflow.png" alt="Stackoverflow" width="25" height="50"/>
                     </a>
                     <a href="https://www.github.com/jaivantraja" target="_blank">
-                        <Image style={{filter: "brightness(100%) invert(100%)"}} className={styles.linkImg} title={"Github"} src="/icons/github.png" alt="Github" width="25" height="50"/>
+                        <Image style={{filter: "brightness(100%) invert(100%)"}} className={styles.linkImg} title={"Github"} src="./icons/github.png" alt="Github" width="25" height="50"/>
                     </a>
                 </div>
         </div>
