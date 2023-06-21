@@ -11,14 +11,14 @@ const rubik600 = Rubik({
 
 const timelineData = [
     {
-        src:"./public/icons/eSillicon.jpg",
+        src:"./icons/eSillicon.jpg",
         status:"Active",
         name: "eSilicon Labs",
         title: "Landslide Prediction System",
         description:"Currently working on a real-time efficient and robust landslide detection system.",
     },
     {
-        src:"./public/icons/sap.png",
+        src:"./icons/sap.png",
         status: "Active",
         name: "SAP Labs",
         title: "Blockchain Based Validation System",
