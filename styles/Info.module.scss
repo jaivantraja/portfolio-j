@@ -1,0 +1,786 @@
+@import "colors";
+@import "fonts";
+.body
+{
+  user-select: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+          "search search search search search"
+          "name name profile currently currently"
+          "skills skills profile intrests intrests"
+          "skills skills profile intrests intrests"
+          "skills skills profile links links"
+          "about about about about about"
+          "about about about about about"
+          "education education education education education"
+          "education education education education education"
+          "education education education education education"
+          "education education education education education"
+          "experience experience experience experience experience"
+        "experience experience experience experience experience"
+        "experience experience experience experience experience"
+        "experience experience experience experience experience"
+        "projects projects projects projects projects "
+        "projects projects projects projects projects "
+        "projects projects projects projects projects "
+        "projects projects projects projects projects "
+        "projects projects projects projects projects "
+          "projects projects projects projects projects "
+          "courses courses courses courses courses"
+          "courses courses courses courses courses"
+          "courses courses courses courses courses"
+        "publications publications publications publications publications"
+        "publications publications publications publications publications"
+        "publications publications publications publications publications"
+        "publications publications publications publications publications"
+        "achievements achievements achievements achievements achievements"
+        "achievements achievements achievements achievements achievements"
+        "achievements achievements achievements achievements achievements"
+        "foot foot foot foot foot"
+        "foot foot foot foot foot";
+  grid-gap: 20px;
+  height: 100%;
+}
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.current
+{
+  grid-area: currently;
+  background-color:$ComponentColor;
+  border-radius: 40px;
+  padding: 30px;
+  font-size: 20px;
+  color:#cccc;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+}
+.name
+ {
+   grid-area: name;
+  padding-top: 20px;
+  padding-left: 20px;
+  height: 200px;
+  font-family: sans-serif;
+  font-size:50px;
+  border-radius: 20px;
+  opacity: 0;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+ }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+#typingAnimation {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(100) infinite;
+  border-right: 3px solid #000; /* Optional: Adds a blinking cursor effect */
+}
+.skillName
+{
+  display: flex;
+  gap:3.5rem;
+  font-weight:bolder;
+  font-size:25px;
+}
+.skillSet
+{
+  margin-top: 8px;
+  grid-area: links;
+  height: 60px;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  gap: 3.5rem;
+}
+.skillSet .img {
+  height: auto;
+  text-align: center;
+  color:black;
+  font-weight:bold;
+}
+.skills
+{
+  grid-area: skills;
+  padding:30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:2.3rem;
+  border-radius: 20px;
+  background-color:$skillsColor;
+    opacity: 0;
+    animation: fadeInFromTop 3s ease-in-out forwards;
+}
+.profile
+{
+  grid-area: profile;
+  text-align: center;
+  border-radius: 20px;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+}
+.interest
+{
+  grid-area: intrests;
+  text-align: center;
+  border-radius: 40px;
+  background-color: $ComponentColor;
+  opacity: 0;
+  color:#cccc;
+  padding: 20px;
+  padding-top: 28px;
+  padding-left: 40px;
+  font-size: 20px;
+  text-align: left;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+}
+.links
+{
+  grid-area: links;
+  height: 80px;
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 40px;
+  background-color: $linksColor;
+  transition: background-color 0.4s ease;
+  opacity: 0;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+}
+/*.links:hover
+{
+  background-color: black;
+  .linkImg
+  {
+    filter: brightness(100%) invert(100%);
+  }
+  border:1px solid #cccccc;
+}*/
+.about
+{
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 10px;
+  grid-area: about;
+  height: 250px;
+  border-radius: 30px;
+  background-color: $ComponentColor ;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+}
+.resumeLink:hover
+{
+   font-weight: bold;
+}
+
+.resume
+{ grid-area: resume;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  border-radius: 38px;
+}
+.education
+{ grid-area: education;
+  height: 800px;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 10px;
+  border-radius: 38px;
+  background-color: $ComponentColor ;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+}
+.timeline {
+  position: relative;
+  margin: 40px 0;
+  padding: 0;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  position: relative;
+  padding: 17px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 20px;
+}
+
+.timelineItem:last-child {
+  border: none;
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  left: -25px;
+  top: 10px;
+}
+
+.timelineItem .date {
+  margin: 0;
+  font-weight: bold;
+
+}
+
+.timelineItem .degree {
+  margin: 5px 0;
+  font-weight: bold;
+
+}
+
+.timelineItem .school {
+  margin: 0;
+
+}
+.experience
+{ grid-area: experience;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 10px;
+  height: 600px;
+  border-radius: 38px;
+  background-color: $ComponentColor ;
+  opacity: 0;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+}
+.portfolioGrid {
+  display: flex;
+  gap: 1rem;
+}
+
+.portfolioItem {
+  background-color: rgba(47, 46, 46, 0.49);
+  border-radius: 38px;
+  text-align: left;
+  height: 500px;
+  width:490px;
+  padding: 30px;
+  box-sizing: border-box;
+  transition: background-color 0.6s ease;
+}
+.portfolioItem:hover
+{
+  border: 1px solid #cccccc;
+  background-color: black;
+}
+.projects
+{ grid-area: projects;
+  height: 900px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 10px;
+  border-radius: 38px;
+  background-color: $ComponentColor ;
+  opacity: 0;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+}
+.projectCard {
+  background-color: rgba(47, 46, 46, 0.49);
+  border-radius: 30px;
+  transition: background-color 0.4s ease;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.projectTitle {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.projectDescription {
+  margin-top: 5px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.projectCard:hover .projectDescription {
+  opacity: 1;
+  max-height: 100px;
+}
+.projectCard:hover .projectTitle .projectLinks{
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+.projectLinks {
+  margin-top: 10px;
+}
+
+.projectLink {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 12px;
+  text-decoration: underline white;
+}
+.projectLink:hover
+{
+  color: white;
+  font-weight: bold;
+}
+.projectCard:hover {
+  background-color: black;
+  border:1px solid white;
+}
+.courses
+{ grid-area: courses;
+  height: 500px;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 10px;
+  background-color: $ComponentColor;
+  border-radius: 38px;
+  opacity: 0;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+}
+.courseList
+{
+  padding-top: 20px;
+  display: flex;
+  gap:2rem;
+}
+
+.courseCard {
+  width: 380px;
+  height: 350px;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  background-color: rgba(47, 46, 46, 0.49);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.courseView
+{
+  opacity: 0;
+  padding-left: 160px;
+  padding-bottom: 60px;
+  transition: opacity 0.3s ease;
+  max-height: 0;
+}
+.courseCardImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.courseInfo {
+  margin-top: 10px;
+}
+.courseInfo .courseTitle {
+  font-size:30px;
+  transition: opacity 0.3s ease;
+  font-weight: bold;
+}
+.courseCard:hover
+{
+  cursor: pointer;
+  .courseTitle{
+    opacity: 10%;
+  }
+  .courseDescription
+  {
+    opacity: 20%;
+  }
+  .courseView
+  {
+    padding-left: 160px;
+    padding-bottom: 60px;
+    opacity: 1;
+  }
+}
+.courseInfo .courseDescription {
+  font-size: 20px;
+  transition: opacity 0.3s ease;
+  margin-top: 5px;
+}
+.publications
+{ grid-area:publications;
+  height: 920px;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 10px;
+  background-color: $ComponentColor;
+  border-radius: 38px;
+  opacity: 0;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+}
+.publicationList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+}
+.publicationItem {
+  margin-bottom: 20px;
+  background-color: rgba(47, 46, 46, 0.49);
+  border-radius: 30px;
+  transition: background-color 0.4s ease;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.publicationItem:hover {
+  background-color: black;
+  border:1px solid white;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.date {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  color: #888;
+}
+.publicationLink
+{
+  text-decoration: underline;
+}
+.publicationLink:hover
+{
+  font-weight: bold;
+  color: white;
+}
+
+.description {
+  font-size: 25px;
+  line-height: 1.5;
+  color:#cccc;
+}
+.achievements
+{ grid-area:achievements;
+  height: 600px;
+  background-color: $ComponentColor;
+  opacity: 0;
+  max-height: 0;
+  border-radius: 38px;
+  opacity: 0;
+  animation: fadeInFromTop 3s ease-in-out forwards;
+}
+
+.footer
+{ grid-area:foot;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  gap:20rem;
+  background-color: rgba(73, 73, 73, 0.16);
+  padding: 30px 0;
+}
+.head
+{
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+  gap:2rem;
+}
+.Navigation
+{
+  display: flex;
+  flex-direction: column;
+  gap:0.7rem;
+}
+.navigationLink
+{
+  color: #4b4b4b;
+}
+.navigationLink:hover
+{
+  font-weight: bold;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.socialLinks
+{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.footerTitle
+{
+  color: #cccccc;
+  font-size: 20px;
+}
+.scrollBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.searchBar
+{
+  grid-area: search;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 4.7rem;
+  font-size:30px;
+  height: 50px;
+  border-radius: 30px;
+  border: 3px solid white;
+}
+.a
+{
+  font-size: 20px;
+}
+@media (min-width: 1081px) and (max-width:1442px ) {
+  .publicationList{
+    height: fit-content;
+  }
+  .publications
+  {
+    height: fit-content;
+  }
+  .about {
+    height: fit-content;
+  }
+  .footer
+  {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .Navigation
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  .head
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  .socialLinks
+  {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width:1080px) and (min-width:0px) {
+  .body
+  {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+  }
+  .name
+  {
+    height: fit-content;
+    width: fit-content;
+  }
+  .about
+  {
+    height: fit-content;
+  }
+  .profile
+  {
+    max-width: 0;
+    max-height: 0;
+  }
+  .current
+  {
+    height: fit-content;
+  }
+  .interest
+  {
+    height: fit-content;
+  }
+  .name
+  {
+    width:fit-content;
+    height: fit-content;
+  }
+  .education
+  {
+    height: fit-content;
+  }
+  .experience
+  {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolioItem
+  {
+    width: fit-content;
+    height: fit-content;
+  }
+  .portfolioGrid
+  {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .links
+  {
+    width: fit-content;
+    height: fit-content;
+  }
+  .projects
+  {
+    height: fit-content;
+  }
+  .projectCard
+  {
+    width:auto;
+    height: fit-content;
+  }
+  .courses
+  {
+    height: fit-content;
+  }
+  .courseList
+  {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .courseCard
+  {
+    width: inherit;
+    height: fit-content;
+  }
+  .searchBar
+  {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 1.5rem;
+  }
+  .skills{
+    display: flex;
+    gap: 1rem;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .skillName
+  {
+    display: flex;
+    gap: 1rem;
+    font-size: 15px;
+    flex-direction: column;
+  }
+  .skillSet
+  {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: left;
+    gap: 1rem;
+  }
+  .skillSet .img
+  {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+  }
+  .image
+  {
+    display: none;
+  }
+  .skillName
+  {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+  }
+  .publications
+  {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .publicationList
+  {
+    height: fit-content;
+    width: fit-content;
+  }
+  .publicationItem
+  {
+    width:fit-content;
+    height: fit-content;
+  }
+  .footer
+  {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    height: fit-content;
+  }
+  .head
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  .Navigation
+  {
+    display: flex;
+  }
+  .socialLinks
+  {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
