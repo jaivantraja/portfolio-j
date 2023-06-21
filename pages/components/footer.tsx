@@ -9,7 +9,7 @@ export default function Footer()
                     <p className={styles.footerTitle}>Copyright &copy; 2023 Jaivant B R </p>
                     <p className={styles.footerTitle}>All rights reserved</p>
                  <a href={"#top"}>
-                 <Image style={{filter: "brightness(100%) invert(100%)"}} title={"Up"} src="/icons/upload.png" alt="up" width="50" height="50"/>
+                 <Image style={{filter: "brightness(100%) invert(100%)"}} title={"Up"} src="./icons/upload.png" alt="up" width="50" height="50"/>
              </a>
              </div>
                 <div className={styles.Navigation}>
