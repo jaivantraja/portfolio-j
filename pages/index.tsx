@@ -54,7 +54,7 @@ export default function Home() {
             <Achievements/>
             <Footer/>
         <button id="scrollToTopBtn" className={styles.scrollBtn} onClick={scrollToTop}>
-            <Image style={{filter: "brightness(100%) invert(100%)"}} title={"Up"} src="/icons/upload.png" alt="up" width="50" height="50"/>
+            <Image style={{filter: "brightness(100%) invert(100%)"}} title={"Up"} src="./icons/upload.png" alt="up" width="50" height="50"/>
         </button>
     </main>
   )
