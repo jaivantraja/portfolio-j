@@ -14,27 +14,27 @@ export default function Skills()
         <div className={styles.skills}>
                 <div className={styles.skillSet}>
                     <div className={styles.img}>
-                        <Image className={styles.image} src="/icons/python.png" alt="Python" width="35" height="40"/>
+                        <Image className={styles.image} src="./icons/python.png" alt="Python" width="35" height="40"/>
                         <span>Python</span>
                     </div>
                     <div className={styles.img}>
-                        <Image className={styles.image} src="/icons/java.png" alt="Java" width="35" height="40"/>
+                        <Image className={styles.image} src="./icons/java.png" alt="Java" width="35" height="40"/>
                         <span>Java</span>
                     </div>
                     <div className={styles.img} >
-                        <Image className={styles.image} src="/icons/java-script.png" alt="JS" width="35" height="40"/>
+                        <Image className={styles.image} src="./icons/java-script.png" alt="JS" width="35" height="40"/>
                         <span>Javascript</span>
                     </div>
                     <div className={styles.img}>
-                        <Image className={styles.image} src="/icons/atom.png" alt="React" width="35" height="40"/>
+                        <Image className={styles.image} src="./icons/atom.png" alt="React" width="35" height="40"/>
                         <span>React</span>
                     </div>
                     <div className={styles.img}>
-                        <Image className={styles.image} src="/favicon.ico" alt="React" width="35" height="40"/>
+                        <Image className={styles.image} src="./favicon.ico" alt="React" width="35" height="40"/>
                         <span>NextJS</span>
                     </div>
                     <div className={styles.img}>
-                        <Image className={styles.image} src="/icons/sql-server.png" alt="SQL" width="35" height="60"/>
+                        <Image className={styles.image} src="./icons/sql-server.png" alt="SQL" width="35" height="60"/>
                         <span style={{color:"black",fontWeight:"bold"}}>SQL</span>
                     </div>
                 </div>
