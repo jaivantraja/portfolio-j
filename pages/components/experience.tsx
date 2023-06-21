@@ -11,7 +11,7 @@ const rubik600 = Rubik({
 
 const timelineData = [
     {
-        src:"./icons/eSillicon.jpg",
+        src:"./icons/esillicon.jpg",
         status:"Active",
         name: "eSilicon Labs",
         title: "Landslide Prediction System",
