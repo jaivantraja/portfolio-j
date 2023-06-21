@@ -47,7 +47,7 @@ export default function Courses()
                             <a  className={styles.courseTitle}>{item.title}</a>
                             <div className={styles.courseView}>
                                 <a href={item.link} target="_blank">
-                                    <Image  style={{filter: "brightness(100%) invert(100%)"}} title={"next"} src="./icons/next.png" alt="next" width="50" height="50"/>
+                                    <Image  style={{filter: "brightness(100%) invert(100%)"}} title={"next"} src=".public/icons/next.png" alt="next" width="50" height="50"/>
                                 </a>
                             </div>
                             <p  className={styles.courseDescription}>{item.period}</p>
