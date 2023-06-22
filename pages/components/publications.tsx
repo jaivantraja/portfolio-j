@@ -10,7 +10,7 @@ const rubik600 = Rubik({
 
 const publications = [
     {
-        title: "Identification off Ill Animals(poultry) Using Audio Processing And Thermal Imaging With Machine Learning",
+        title: "Identification off ill Animals(poultry) Using Audio Processing And Thermal Imaging With Machine Learning",
         date: "2022-30-07",
         description: "To identify and separate sick animals from healthy ones thus production and efficiency is increased with less human intervention.",
         link:"https://www.ijert.org/identification-of-ill-animalspoultry-using-audio-processing-and-thermal-imaging-with-machine-learning"
