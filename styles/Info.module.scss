@@ -657,6 +657,7 @@
   {
     height: fit-content;
     display: flex;
+    padding-left: 0px;
     flex-direction: column;
   }
   .portfolioItem
@@ -677,6 +678,7 @@
   }
   .projects
   {
+    padding-left: 0px;
     height: fit-content;
   }
   .projectCard
@@ -686,6 +688,7 @@
   }
   .courses
   {
+    padding-left: 0px;
     height: fit-content;
   }
   .courseList
@@ -746,6 +749,7 @@
   }
   .publications
   {
+    padding-left: 0px;
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -781,6 +785,13 @@
     display: flex;
     flex-direction: column;
   }
+}
+.heading
+{
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
 
