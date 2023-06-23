@@ -32,7 +32,7 @@ export default function Publications()
 {
     return(
         <div id="publications" className={styles.publications}>
-            <p className={rubik600.className} style={{fontSize:"38px",paddingBottom:"10px"}}>Publications</p>
+            <p className={styles.heading} style={{fontSize:"38px",paddingBottom:"10px"}}>Publications</p>
             <ul className={styles.publicationList}>
                 {publications.map((publication, index) => (
                     <li key={index} className={styles.publicationItem}>
