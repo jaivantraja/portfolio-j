@@ -40,12 +40,12 @@ export default function Home() {
     <main className={styles.body}>
             <Search/>
         <Name/>
-            <Skills/>
         <Profile/>
         <Currently/>
             <Intrest/>
             <Links/>
             <About/>
+        <Skills/>
             <Education/>
             <Experience/>
             <Projects/>
