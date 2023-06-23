@@ -30,7 +30,7 @@ export default function Experience()
 {
     return(
         <div id={"experience"} className={styles.experience}>
-            <p className={rubik600.className} style={{fontSize:"38px",paddingBottom:"10px"}}>Experience</p>
+            <p className={styles.heading} style={{fontSize:"38px",paddingBottom:"10px"}}>Experience</p>
             <div className={styles.portfolioGrid}>
                 {timelineData.map((item, index) => (
                     <div className={styles.portfolioItem} key={index}>
