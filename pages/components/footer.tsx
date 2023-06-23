@@ -12,15 +12,6 @@ export default function Footer()
                  <Image style={{filter: "brightness(100%) invert(100%)"}} title={"Up"} src="./icons/upload.png" alt="up" width="50" height="50"/>
              </a>
              </div>
-                <div className={styles.Navigation}>
-                    <h2 className={styles.footerTitle}>Navigation</h2>
-                    <a href="#about" className={styles.navigationLink}>About</a>
-                    <a href="#education" className={styles.navigationLink}>Education</a>
-                    <a href="#experience" className={styles.navigationLink}>Experience</a>
-                    <a href="#projects" className={styles.navigationLink} >Projects</a>
-                    <a href="#courses" className={styles.navigationLink}>Courses</a>
-                    <a href="#publications" className={styles.navigationLink}>Publications</a>
-                </div>
                 <div className={styles.socialLinks}>
                     <h2 className={styles.footerTitle}>Social Links</h2>
                     <a href={"https://www.linkedin.com/in/jaivant-rajasekaran-b6b6a7220"}>
@@ -38,6 +29,15 @@ export default function Footer()
                     <a href="https://www.github.com/jaivantraja" target="_blank">
                         <Image style={{filter: "brightness(100%) invert(100%)"}} className={styles.linkImg} title={"Github"} src="./icons/github.png" alt="Github" width="25" height="50"/>
                     </a>
+                </div>
+             <div className={styles.Navigation}>
+                    <h2 className={styles.footerTitle}>Navigation</h2>
+                    <a href="#about" className={styles.navigationLink}>About</a>
+                    <a href="#education" className={styles.navigationLink}>Education</a>
+                    <a href="#experience" className={styles.navigationLink}>Experience</a>
+                    <a href="#projects" className={styles.navigationLink} >Projects</a>
+                    <a href="#courses" className={styles.navigationLink}>Courses</a>
+                    <a href="#publications" className={styles.navigationLink}>Publications</a>
                 </div>
         </div>
     )
