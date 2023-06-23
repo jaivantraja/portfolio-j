@@ -24,7 +24,7 @@ const publications = [
     {
         title: "A System For Analysing And Improving Sales Of A Product Using Machine Learning  ",
         date: "2022-30-07",
-        description: "To evaluate the traffic congestion data, and compare the flow of traffic on the various types of roads to determine its quality.",
+        description: "To improvise the sales of a market by analysing the preferences snd choices of customers visiting the store..",
         link:""
     },
 ];
