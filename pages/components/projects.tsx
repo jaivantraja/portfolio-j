@@ -38,7 +38,7 @@ export default function Projects()
 {
     return(
         <div id={"projects"} className={styles.projects}>
-            <p className={rubik600.className} style={{fontSize:"38px",paddingBottom:"10px"}}>Projects</p>
+            <p className={styles.heading} style={{fontSize:"38px",paddingBottom:"10px"}}>Projects</p>
             {projects.map((item, index) => (
             <div className={styles.projectCard} key={index}>
                     <p style={{fontWeight:"bold",fontSize:"35px"}} className={styles.projectTitle}>{item.title}</p>
