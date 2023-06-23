@@ -39,7 +39,7 @@ export default function Courses()
     }
     return(
         <div id="courses" className={styles.courses}>
-            <p className={rubik600.className} style={{fontSize:"38px",paddingBottom:"10px"}}>Courses</p>
+            <p className={styles.heading} style={{fontSize:"38px",paddingBottom:"10px"}}>Courses</p>
             <div className={styles.courseList}>
                 {courses.map((item, index) => (
                 <div className={styles.courseCard} key={index} onClick={()=>handleClick(item.link)}>
