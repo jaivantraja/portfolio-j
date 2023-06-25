@@ -30,7 +30,7 @@ export default function Education()
                     <p className={styles.school}>Singapore International School, Indonesia</p>
                 </div>
                 <div className={styles.timelineItem}>
-                    <h3 className={styles.date}>2013 - 2015</h3>
+                    <h3 className={styles.date}>2010 - 2013</h3>
                     <h4 className={styles.degree}>Primary School</h4>
                     <p className={styles.school}>Rama International School, Indonesia</p>
                 </div>
