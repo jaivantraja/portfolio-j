@@ -24,6 +24,13 @@ const timelineData = [
         title: "Blockchain Based Validation System",
         description:"Currently working on a blockchain based badge validation system.",
     },
+    {
+        src:"./icons/sap.png",
+        status: "Completed",
+        name: "Squash Apps",
+        title: "Full Stack-Web Development",
+        description:"Worked using NodeJS(ExpressJS), ReactJS, MongoDB, Postman API tool",
+    }
 ];
 
 export default function Experience()
