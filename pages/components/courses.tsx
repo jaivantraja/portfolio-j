@@ -28,6 +28,12 @@ const courses=
             link:"https://coursera.org/share/77209f67ef7a23e7b521316ab8450358",
             author:"Andrew Ng, DeepLearning.AI"
         },
+        {
+            title:"Postman API Fundamentals Student Expert",
+            period:"",
+            link:"https://api.badgr.io/public/assertions/guhVLhZrRR6BGYZs6HrWWg?identity__email=21z120%40psgitech.ac.in",
+            author:"Postman Student Program"
+        },
 
     ]
 
