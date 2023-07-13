@@ -25,7 +25,7 @@ const timelineData = [
         description:"Currently working on a blockchain based badge validation system.",
     },
     {
-        src:"./icons/sap.png",
+        src:"./icons/squash.png",
         status: "Completed",
         name: "Squash Apps",
         title: "Full Stack-Web Development",
