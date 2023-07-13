@@ -42,6 +42,15 @@ export default function Skills()
                     <div >
                         <span style={{color:"black"}}>Django</span>
                     </div>
+                    <div>
+                        <span style={{color:"black"}}>TensorFlow</span>
+                    </div>
+                    <div>
+                        <span style={{color:"black"}}>OpenCV</span>
+                    </div>
+                 </div>
+            <div className={styles.skillName>
+            </div>
                     <div >
                         <span style={{color:"black"}}>Flutter</span>
                     </div>
@@ -51,13 +60,6 @@ export default function Skills()
                     <div >
                         <span style={{color:"black"}}>MongoDB</span>
                     </div>
-                    <div>
-                        <span style={{color:"black"}}>TensorFlow</span>
-                    </div>
-                    <div>
-                        <span style={{color:"black"}}>OpenCV</span>
-                    </div>
-                 </div>
             </div>
     );
 
