@@ -49,16 +49,16 @@ export default function Skills()
                         <span style={{color:"black"}}>OpenCV</span>
                     </div>
                  </div>
-            <div className={styles.skillName>
-                    <div >
-                        <span style={{color:"black"}}>Flutter</span>
-                    </div>
-                    <div >
-                        <span style={{color:"black"}}>Firebase</span>
-                    </div>
-                    <div >
-                        <span style={{color:"black"}}>MongoDB</span>
-                    </div>
+            <div className={styles.skillName}>
+                <div >
+                    <span style={{color:"black"}}>Flutter</span>
+                </div>
+                <div >
+                    <span style={{color:"black"}}>Firebase</span>
+                </div>
+                <div >
+                    <span style={{color:"black"}}>MongoDB</span>
+                </div>
             </div>
             </div>
     );
