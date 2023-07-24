@@ -12,24 +12,24 @@ const rubik600 = Rubik({
 const timelineData = [
     {
         src:"./icons/esillicon.jpg",
-        status:"Active",
+        status: "Active",
         name: "eSilicon Labs",
         title: "Landslide Prediction System",
-        description:"Currently working on a real-time efficient and robust landslide detection system.",
+        description: "Currently working on a real-time efficient and robust landslide detection system.",
     },
     {
         src:"./icons/sap.png",
         status: "Active",
         name: "SAP Labs",
-        title: "Blockchain Based Validation System",
-        description:"Currently working on a blockchain based badge validation system.",
+        title: "Blockchain-Based Validation System",
+        description: "Currently working on a blockchain-based badge validation system.",
     },
     {
         src:"./icons/sqaush.png",
-        status: "Completed",
+        status: "",
         name: "Squash Apps",
         title: "Full Stack-Web Development",
-        description:"Worked using NodeJS(ExpressJS), ReactJS, MongoDB, Postman API tool",
+        description: "Worked using NodeJS(ExpressJS), ReactJS, MongoDB, Postman API tool",
     }
 ];
 
