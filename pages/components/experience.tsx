@@ -12,14 +12,14 @@ const rubik600 = Rubik({
 const timelineData = [
     {
         src:"./icons/esillicon.jpg",
-        status: "Active",
+        status: "(Active)",
         name: "eSilicon Labs",
         title: "Landslide Prediction System",
         description: "Currently working on a real-time efficient and robust landslide detection system.",
     },
     {
         src:"./icons/sap.png",
-        status: "Active",
+        status: "(Active)",
         name: "SAP Labs",
         title: "Blockchain-Based Validation System",
         description: "Currently working on a blockchain-based badge validation system.",
@@ -44,7 +44,7 @@ export default function Experience()
                         <div style={{height:"240px"}}>
                              <Image  src={item.src} alt={item.title} width="230" height="20"/>
                         </div>
-                            <h2 style={{fontWeight:"bold",fontSize:"35px",paddingBottom:"40px"}}>{item.name} ({item.status})</h2>
+                            <h2 style={{fontWeight:"bold",fontSize:"35px",paddingBottom:"40px"}}>{item.name} {item.status}</h2>
                             <h3 style={{fontWeight:"bold",fontSize:"25px"}}>{item.title}</h3>
                             <p style={{color:"#cccc"}}>{item.description} </p>
                     </div>
