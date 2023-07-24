@@ -12,27 +12,33 @@ const rubik600 = Rubik({
 const projects=
     [
         {
-            title:"Inventory Management Using Django Framework",
-            info:"",
-            desc:"A web-based application that incorporates Django framework to efficiently manage purchases and sales from various companies and store them in the respective inventory model.",
-            github:"https://github.com/jaivantraja/inventory-management.git",
-            demo:""
+            title: "Inventory Management Using Django Framework",
+            info: "",
+            desc: "A web-based application that incorporates Django framework to efficiently manage purchases and sales from various companies and store them in the respective inventory model.",
+            github: "https://github.com/jaivantraja/inventory-management.git",
+            demo: ""
         },
         {
-            title:"Resume Builder Tool Using Java",
-            info:"",
-            desc:"The resume builder tool is used to create resume documents and store it in the computer's file manager. Further the documents can be sent to employer's mail and the employer can login and view in on the other side.",
-            github:"https://github.com/jaivantraja/resume-builder.git",
-            demo:""
+            title: "Resume Builder Tool Using Java",
+            info: "",
+            desc: "The resume builder tool is used to create resume documents and store it in the computer's file manager. Further the documents can be sent to employer's mail and the employer can login and view in on the other side.",
+            github: "https://github.com/jaivantraja/resume-builder.git",
+            demo: ""
         },
         {
-            title:"Automated Real-time Landslide Detection System",
-            info:"",
-            desc:"The landslide detection system detects landslides remotely during the occurrence of the event and alerts the residents living in the area .",
-            github:"",
-            demo:""
+            title: "Automated Real-time Landslide Detection System",
+            info: "",
+            desc: "The landslide detection system detects landslides remotely during the occurrence of the event and alerts the residents living in the area .",
+            github: "",
+            demo: ""
         },
-
+        {
+            title: "Expense Tracker App Using Flutter",
+            info: "",
+            desc: "It is an app that manages the expenses of individuals who frequently travel. Users can create an account, and then add their trip schedules, further add expenses anytime they want, and can view it. Users can then store and save it on their phone as a CSV file and can also share it through other social media apps.",
+            github: "https://github.com/jaivantraja/expense-app.git",
+            demo: ""
+        },
     ]
 export default function Projects()
 {
