@@ -34,6 +34,12 @@ const courses=
             link:"https://api.badgr.io/public/assertions/guhVLhZrRR6BGYZs6HrWWg?identity__email=21z120%40psgitech.ac.in",
             author:"Postman Student Program"
         },
+        {
+            title:"MATLAB Onramp",
+            period:"",
+            link:"https://matlabacademy.mathworks.com/progress/share/certificate.html?id=1d34f989-56ec-4a98-a9c2-7506f79cffb4&",
+            author:"MathWorks"
+        },
 
     ]
 
