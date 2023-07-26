@@ -369,6 +369,8 @@
 { grid-area: courses;
   height: 500px;
   font-size: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
   padding-left: 30px;
   padding-top: 10px;
   background-color: $ComponentColor;
