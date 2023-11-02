@@ -52,7 +52,7 @@ export default function Skills()
                     <span style={{color:"black"}}>Cordova</span>
                 </div>
                 <div >
-                    <span style={{color:"black"}}>Ionic</span>
+                    <span style={{color:"black"}}>Kotlin</span>
                 </div>
                  </div>
             <div className={styles.skillName}>
@@ -70,9 +70,6 @@ export default function Skills()
                 </div>
                 <div >
                     <span style={{color:"black"}}>Flask</span>
-                </div>
-                <div >
-                    <span style={{color:"black"}}>Kotlin</span>
                 </div>
             </div>
             </div>
