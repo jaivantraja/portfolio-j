@@ -29,7 +29,7 @@ const projects=
             title: "Automated Real-time Landslide Detection System",
             info: "",
             desc: "The landslide detection system detects landslides remotely during the occurrence of the event and alerts the residents living in the area .",
-            github: "",
+            github: "https://github.com/jaivantraja/landslide-system.git",
             demo: ""
         },
         {
