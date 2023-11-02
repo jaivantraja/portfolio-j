@@ -27,7 +27,7 @@ export default function Skills()
                     </div>
                     <div className={styles.img}>
                         <Image className={styles.image} src="./icons/atom.png" alt="React" width="35" height="40"/>
-                        <span>React</span>
+                        <span>ReactJS</span>
                     </div>
                     <div className={styles.img}>
                         <Image className={styles.image} src="./favicon.ico" alt="React" width="35" height="40"/>
@@ -58,6 +58,24 @@ export default function Skills()
                 </div>
                 <div >
                     <span style={{color:"black"}}>MongoDB</span>
+                </div>
+                <div >
+                    <span style={{color:"black"}}>React Native</span>
+                </div>
+                <div >
+                    <span style={{color:"black"}}>Flask</span>
+                </div>
+                <div >
+                    <span style={{color:"black"}}>Postman</span>
+                </div>
+                <div >
+                    <span style={{color:"black"}}>Kotlin</span>
+                </div>
+                <div >
+                    <span style={{color:"black"}}>Cordova</span>
+                </div>
+                <div >
+                    <span style={{color:"black"}}>Ionic</span>
                 </div>
             </div>
             </div>
