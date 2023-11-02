@@ -72,9 +72,6 @@ export default function Skills()
                     <span style={{color:"black"}}>Flask</span>
                 </div>
                 <div >
-                    <span style={{color:"black"}}>Postman</span>
-                </div>
-                <div >
                     <span style={{color:"black"}}>Kotlin</span>
                 </div>
             </div>
