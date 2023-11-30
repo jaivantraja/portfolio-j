@@ -28,7 +28,7 @@ const projects=
         {
             title: "Automated Real-time Landslide Detection System",
             info: "",
-            desc: "The landslide detection system detects landslides remotely during the occurrence of the event and alerts the residents living in the area .",
+            desc: "A real-time robust and efficient landslide detection system using instance segmentation algorithms such as YOLOv8 to analyze objects in every frame being captured through a camera achieved through thresholding the slope areas as Region of Interest. Furthermore, a website is developed using ReactJs and Flask to retrieve analysis of the event from the Firebase that provides a world-map highlighted with areas prone to landslide , images of the event along with a confidence threshold.",
             github: "https://github.com/jaivantraja/landslide-system.git",
             demo: ""
         },
